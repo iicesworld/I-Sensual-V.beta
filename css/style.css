@@ -1,0 +1,153 @@
+@font-face {
+    font-family: "Kanit";
+    src: url("/fonts/");
+    src: url("/fonts/Kanit-Black.ttf") format("ttf"),
+    url("https://yoursite.com/css/fonts/CustomFont.otf") format("opentype"),
+    url("https://yoursite.com/css/fonts/CustomFont.svg#filename") format("svg");
+    }
+
+    .pink {
+        color: #FD1383;
+        font-weight: bold;
+    }
+
+.banner {
+        width: auto;
+        height: 750px;
+        background-image: url("https://cdn.pic.in.th/file/picinth/BN1.png");
+        background-size:     cover;                      /* <------ */
+        background-repeat:   no-repeat;
+        background-position: center center;
+    }
+.navbar-custom {
+    width: 100%;
+    background: black;
+    opacity: 0.5;
+
+
+  
+}    
+.navbar-brand img{
+ 
+    width: 2.3rem;
+    height: 2.8rem;
+    margin: 0 0 0 1.5em;
+}
+
+#wordingBanner {
+text-align: right;
+padding-right: 3em;
+padding-top: 3em;
+
+}
+
+#wordingBanner img{
+    width: 19em;
+    margin-right: 5em;
+}
+
+#wordingBanner h2{
+    text-transform: uppercase;
+    color: white;
+}
+
+#wordingBanner h3{
+    color: white;
+    margin-right: 0em;
+}
+
+
+
+.aboutUs {
+  height: 500px;
+  margin-top: 2.5em;
+
+
+}
+
+.aboutusPic img{
+
+    border-radius: 15px;
+    width:100%;
+}
+
+.aboutusWords {
+
+    width:100%;
+}
+
+#h1about {
+    font-weight: bolder;
+}
+
+
+.middle {
+    margin-top: 2.1em;
+    padding-top: 2em;
+    padding-bottom: 1.4em;
+
+background-color: black;
+color: white;
+ text-align: center;
+ text-transform: uppercase;
+}
+
+.models {
+    width: auto;
+}
+
+.models h1{
+    text-align: center;
+    font-weight: bolder;
+}
+
+
+.model-card {
+    width:auto;
+    position:relative;
+    margin-bottom: 20px;
+}
+
+
+
+.img-model {
+    width:100%;
+    height: auto;
+    border-radius: 12px;
+}
+
+.blur {
+    filter: blur(8.5px)
+}
+
+.model-name {
+    color: white;
+    position:absolute;
+    bottom: 60px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.soon {
+
+    
+}
+
+#more {
+    font-size: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: red;
+    padding: 1.2em 0 1.4em 0;
+}
+.footer {
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1.5em 0 1.5em 0;
+    color:#FD1383;
+    font-size: 2em;
+
+}

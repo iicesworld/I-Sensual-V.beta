@@ -1,20 +1,31 @@
-@font-face {
+/* @font-face {
     font-family: "Kanit";
     src: url("/fonts/");
     src: url("/fonts/Kanit-Black.ttf") format("ttf"),
     url("https://yoursite.com/css/fonts/CustomFont.otf") format("opentype"),
     url("https://yoursite.com/css/fonts/CustomFont.svg#filename") format("svg");
-    }
+    } */
+
+    @import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
     .pink {
         color: #FD1383;
         font-weight: bold;
     }
 
+    body {
+        font-family: 'Kanit', sans-serif !important;
+    }
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
 .banner {
         width: auto;
         height: 750px;
-        background-image: url("https://cdn.pic.in.th/file/picinth/BN1.png");
+     
         background-size:     cover;                      /* <------ */
         background-repeat:   no-repeat;
         background-position: center center;
@@ -34,11 +45,31 @@
     margin: 0 0 0 1.5em;
 }
 
-#wordingBanner {
-text-align: right;
-padding-right: 3em;
-padding-top: 3em;
+.wordingBanner {
+    right: 3em;
+    top: 20%;
+}
+@media only screen and (max-width: 600px) {
+    .wordingBanner {
+        top: 45%;
+        right: auto;
+        left: 50%;
+        transform: translate(-50% , -50%) !important;
+        width: 65%;
+    }
+    .carousel-item .imgBg{
+        height: 85vh;
+        width: 100%;
+        object-fit: cover;
+    }
+}
 
+@media only screen and (min-width: 600px) {
+    .carousel-item .imgBg{
+        height: 85vh;
+        width: 100%;
+        object-fit: cover;
+    }
 }
 
 #wordingBanner img{
@@ -83,8 +114,8 @@ padding-top: 3em;
 
 .middle {
     margin-top: 2.1em;
-    padding-top: 2em;
-    padding-bottom: 1.4em;
+    /* padding-top: 2em;
+    padding-bottom: 1.4em; */
 
 background-color: black;
 color: white;
@@ -138,16 +169,25 @@ color: white;
     display: flex;
     justify-content: center;
     align-items: center;
-    color: red;
+    /* color: red; */
     padding: 1.2em 0 1.4em 0;
+    background: linear-gradient(45deg, #FD1383 , #0000005e) ;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 .footer {
     background-color: black;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 1.5em 0 1.5em 0;
+    /* padding: 1.5em 0 1.5em 0; */
     color:#FD1383;
     font-size: 2em;
 
+}
+
+.carousel-indicators [data-bs-target] {
+    width: 10px !important;
+    height: 10px !important;
+    border-radius: 50%;
 }
